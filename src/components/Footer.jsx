@@ -26,8 +26,19 @@ const Footer = () => {
 
       </div>
       {/* SOFA IMAGE */}
-            <img src={SOFA} alt="" className=" -bottom-12 lg:-bottom-9 left-1/2 -translate-x-1/2 w-[350px] lg:w-[450px] mt-10 
-            lg:mb-11 absolute hover:animate-wiggle duration-700 ease-in-out cursor-pointer" />
+            <img src={SOFA} alt="" className=" absolute
+    bottom-0
+    
+    sm:bottom-[-2rem]
+    lg:bottom-[-1rem]
+    left-1/2 -translate-x-1/2
+    w-[280px]
+    sm:w-[350px]
+    lg:w-[450px]
+    hover:animate-wiggle
+    duration-700
+    ease-in-out
+    cursor-pointer" />
             </div>
 
         {/* lower Area : Copyright Area */}

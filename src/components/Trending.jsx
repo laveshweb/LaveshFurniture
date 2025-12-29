@@ -1,5 +1,8 @@
 import React from 'react'
 import ProductCart from './ProductCart'
+import IMAGE2 from '../assets/images/image2.jpg'
+import IMAGE3 from '../assets/images/image3.jpg'
+import IMAGE4 from '../assets/images/image4.jpg'
 
 const Trending = () => {
   return (
@@ -19,14 +22,14 @@ const Trending = () => {
 
       {/* ITEM-1 */}
       <div className="col-span-1">
-        <ProductCart price="550" position="bottom-4 left-4"/>
+        <ProductCart price="550" position="bottom-4 left-4" src={IMAGE2} />
       </div>
 
     {/* ITEM-2 and 3 (combined text/Image) */}
     <div className="col-span-1 md:col-span-2 flex flex-col space-y-6">
         <div className="grid md:grid-cols-2 gap-6 ">
-            <ProductCart price="1000" position="bottom-4 left-4"/>
-            <ProductCart price="260" position="bottom-4 left-4"/>
+            <ProductCart price="1000" position="bottom-4 left-4" src={IMAGE3}/>
+            <ProductCart price="260" position="bottom-4 left-4" src={IMAGE4}/>
         </div>
     </div>
     <div className="pt-6 ">

@@ -1,6 +1,11 @@
 import React from 'react'
 import BigImage from './BigImage'
 import SmallImage from './SmallImage'
+import IMAGE5 from '../assets/images/image5.jpg'
+import IMAGE6 from '../assets/images/image6.jpg'
+import IMAGE7 from '../assets/images/image7.jpg'
+import IMAGE8 from '../assets/images/image8.jpg'
+import IMAGE9 from '../assets/images/image9.jpg'
 
 const NewArrival = () => {
   return (
@@ -11,7 +16,7 @@ const NewArrival = () => {
             <div className="lg:col-span-2 ">
                 <div className="flex flex-col-reverse card-hover">
                     {/* Image  PlaceHolder*/}
-                    <BigImage/>
+                    <BigImage src={IMAGE5}/>
 
                     {/* Text Content */}
                     <div className="mt-6 md:mt-0 pt-4 flex justify-between ">
@@ -30,7 +35,7 @@ const NewArrival = () => {
                 {/* Small Card 1*/}
                 <div className="flex flex-col  card-hover h-[420px] sm:h-[300px]">
                 {/* Image Placeholder */}
-                <SmallImage />
+                <SmallImage src={IMAGE6} />
                 {/* Text Details */}
                 <div className="w-full  pt-2 ">
                     <div>
@@ -48,7 +53,7 @@ const NewArrival = () => {
                   {/* Small Card 2*/} 
                   <div className="flex flex-col  card-hover h-[420px] sm:h-[300px]  ">
                 {/* Image Placeholder */}
-                <SmallImage />
+                <SmallImage  src={IMAGE7}/>
                 {/* Text Details */}
                 <div className="w-full  pt-2 ">
                     <div>
@@ -64,7 +69,7 @@ const NewArrival = () => {
                 {/* Small Card 3 */}
                 <div className="flex flex-col  card-hover  h-[420px] sm:h-[300px]">
                 {/* Image Placeholder */}
-                <SmallImage />
+                <SmallImage src={IMAGE8} />
                 {/* Text Details */}
                 <div className="w-full  pt-2 ">
                     <div>
@@ -81,7 +86,7 @@ const NewArrival = () => {
                 
                 <div className="flex flex-col   card-hover  h-[420px] sm:h-[300px]">
                 {/* Image Placeholder */}
-                <SmallImage />
+                <SmallImage  src={IMAGE9}/>
                 {/* Text Details */}
                 <div className="w-full  pt-2 ">
                     <div>

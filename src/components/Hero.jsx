@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import React from 'react'
 import HeroImage from './HeroImage'
+import SOFA from '../assets/images/image1.jpg'
 
 const Hero = () => {
   return (
@@ -28,7 +29,7 @@ const Hero = () => {
             </button>
         </div>
         {/* right Content */}
-        <HeroImage/>
+        <HeroImage src={SOFA}/>
 
     </div>
     

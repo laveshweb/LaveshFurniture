@@ -16,7 +16,7 @@ const Header = () => {
         <nav className="hidden lg:flex items-center space-x-8"
         >
           {/* Links */}
-          <NavBtn>Home</NavBtn>
+          <NavBtn >Home</NavBtn>
           <NavBtn>About</NavBtn>
           <NavBtn>Works</NavBtn>
           <NavBtn>Gallery</NavBtn>
