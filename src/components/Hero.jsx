@@ -3,19 +3,47 @@ import React from 'react'
 import HeroImage from './HeroImage'
 import SOFA from '../assets/images/image1.jpg'
 
+
+//GSAP
+import gsap from 'gsap'
+import { useEffect, useRef } from "react";
+
+
 const Hero = () => {
+    const rootRef = useRef(null)
+  //GSAP TWWEENS
+  useEffect(() => {
+const ctx = gsap.context(() => {
+    const tl = gsap.timeline({defaults:{
+        ease : "power1.out"    }})
+
+        //Animations
+        tl.from(".FINE", {x : -120, opacity : 0, duration : 0.9})
+        .from(".FURNISHINGS", {x:120, opacity : 0, duration : 1.2},"-=0.6" )
+
+        //IMAGE
+        tl.from(".HERO-IMAGE-WRAPPER", {x:50, opacity : 0,duration : 1.2, ease : "power2.out"}, "-=0.5")
+    
+
+        //Subtext
+        tl.from(".HERO-SUBTEXT",{y: 24, opacity : 0, duration : 0.8}, "-=0.6");
+
+    }, rootRef)
+    return () => ctx.revert();
+  }, [])
+
   return (
-      <section className='max-w-7xl mt-14 lg:mt-30 mx-auto p-4 sm:p-8 mb-20 '>
+      <section ref={rootRef} className='max-w-7xl mt-26 lg:mt-30 mx-auto p-4 sm:p-8 mb-10 '>
     
     <div className="flex relative flex-col lg:flex-row  lg:space-x-12  overflow-x-clip z-99">
         {/* Left Content */}
         <div className="lg:w-1/2">
             <h1 className="text-7xl sm:text-8xl font-extrabold leading-none mb-8">
-                <span className="block impact lg:text-[250px]">FINE</span>
-                <span className="block impact lg:text-[250px] tracking-tight lg:mt-10">FURISHINGS</span>
+                <span className="block impact lg:text-[250px] FINE">FINE</span>
+                <span className="block impact lg:text-[250px] tracking-tight lg:mt-10 FURNISHINGS">FURISHINGS</span>
             </h1>
             {/* SubText */}
-            <div className="text-base lg:text-lg text-zinc-600 max-w-d lg:w-full mb-8 py-2 ">
+            <div className="text-base lg:text-lg text-zinc-600 max-w-d lg:w-full mb-8 py-2 HERO-SUBTEXT ">
                 Choosing the right furniture for you home online will add elegance and functionality to your space.
                 we offer a curated collection of fine furnishing
             </div>

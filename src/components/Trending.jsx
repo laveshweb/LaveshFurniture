@@ -4,11 +4,15 @@ import IMAGE2 from '../assets/images/image2.jpg'
 import IMAGE3 from '../assets/images/image3.jpg'
 import IMAGE4 from '../assets/images/image4.jpg'
 
+
+
 const Trending = () => {
+
+
   return (
-   <section className='max-w-7xl mx-auto p-4 sm:p-8 mt-10 mb-20'>
+   <section className='max-w-7xl mx-auto p-4 sm:p-8 mt-10 mb-20 '>
     <div className="relative flex justify-between items-end mb-12">
-    <h2 className="text-6xl lg:text-9xl impact uppercase text-nowrap leading-tighter">
+    <h2 className="text-6xl lg:text-9xl impact uppercase text-nowrap leading-tighter ">
         FOR TRENDING <br/> NOW
     </h2>
     <button className="text-sm lg:text-lg absolute right-0 font-medium mr-4 sm:mr-0 border
